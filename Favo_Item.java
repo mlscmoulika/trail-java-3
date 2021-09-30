@@ -32,6 +32,7 @@ public class Favo_Item{
             out.println("Enter the gender");
             out.println("1. Male");
             out.println("2. Female");
+            out.println("2. Others");
             out.println("3. others");
             gender[i]=sc.nextInt();
             if(gender[i]==1)
@@ -118,6 +119,9 @@ public class Favo_Item{
             }
 
         }
+
+        out.println("Age group of 10-30 years choosen items");
+
         //running the menu
         out.println("Age group of 11-30 years choosen items");
         for(int i=0;i<9;i++)
@@ -144,8 +148,11 @@ public class Favo_Item{
             }
 
         }
+        out.println("Age group of more than 30 years choosen items");
+
         //running the menu again
         out.println("Age group of >30 years choosen items");
+
         for(int i=0;i<9;i++)
         {
             if(age[i]>31)
