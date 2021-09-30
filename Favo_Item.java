@@ -17,10 +17,10 @@ public class Favo_Item{
     {
         Scanner sc = new Scanner(System.in);
         out.println("Welcome to Orion Supermarket,Banglore");
-        int age[]=new int [10];
-        String name[]=new String[10];
-        int gender[]=new int[10];
-        int choice[]=new int[10];
+        int age[]=new int [20];
+        String name[]=new String[20];
+        int gender[]=new int[20];
+        int choice[]=new int[20];
         int c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0;
         int a1=0,a2=0,a3=0;
         int g1=0,g2=0;
@@ -32,6 +32,7 @@ public class Favo_Item{
             out.println("Enter the gender");
             out.println("1. Male");
             out.println("2. Female");
+            out.println("3. others");
             gender[i]=sc.nextInt();
             if(gender[i]==1)
             {
@@ -86,6 +87,9 @@ public class Favo_Item{
             else
             {
                 out.println("You didn't enter a valid choice");
+                out.println("Better luck next time");
+                out.println("You may try again later");
+                
             }
 
         }
@@ -114,6 +118,7 @@ public class Favo_Item{
             }
 
         }
+        //running the menu
         out.println("Age group of 11-30 years choosen items");
         for(int i=0;i<9;i++)
         {
@@ -139,6 +144,7 @@ public class Favo_Item{
             }
 
         }
+        //running the menu again
         out.println("Age group of >30 years choosen items");
         for(int i=0;i<9;i++)
         {
